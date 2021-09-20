@@ -16,7 +16,7 @@
             <div class='sideNav'>
               <ul>
                 <li><a href="#">Survey 1</a></li>
-                <li><a href="#">Survey 1</a></li>
+                <li><a href="#">Survey 2</a></li>
               </ul>
             </div>
 

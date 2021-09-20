@@ -1,0 +1,61 @@
+/* CSS Document */
+
+/* global rules */
+body {
+    margin: 0px;
+}
+
+p {}
+a {}
+a:hover {}
+
+h1, h2, h3, h4, h5, h6 {}
+
+/* wrapper rules */
+
+.wrapOverall{
+    width: 900px;
+    border-left: 1px solid #999999;
+    border-right: 1px solid #999999;
+    margin: 0 0 0 30;
+}
+
+.wrapContent{
+    width: 900px;
+
+}
+
+/* basic template rules */
+
+.header{
+    background-color: #dfdfdf;
+    border-bottom: 1px solid #999999;
+}
+
+.content{
+    width: 700px;
+    float: right;
+    border-left: 1px dotted #999999;
+}
+
+.footer{
+    background-color:  #efefef;
+}
+
+/* side naviigation rules */
+
+.sideNav{
+
+}
+.sideNav ul{
+    
+}
+.sideNav li{
+    
+}
+.sideNav ul li a{
+    
+}
+.sideNav ul li a:hover{
+    
+}
