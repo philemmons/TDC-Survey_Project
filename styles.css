@@ -88,9 +88,10 @@ h3.questionTitle{
     margin: 0px;
     padding: 2px 0px 2px 4px;
     text-decoration: none;
+    display: block;
 }
 .sideNav ul li a:hover{
-    background-color: #efefef;
+    background-color: #c5c5c5;
 }
 
 /* common element rules */
