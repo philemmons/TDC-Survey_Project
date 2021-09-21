@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project 001 - Survey</title>
     <meta name="description" content="HTML5 Broilerplate">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class='wrapOverall'>
-      <div class= 'header'><h2>Survey 2021</h2></div><!--end header -->
+      <div class= 'header'><h2 class="siteTitle">Survey 2021</h2></div><!--end header -->
         <div class='wrapContent'>
 
             <div class='sideNav'>
@@ -21,14 +21,18 @@
             </div>
 
             <div class= 'content'>
-              <h2>Survey Name</h2>
-              <h3>Survey Name</h3>
-              <form action="index.php" method="post">
-                  <input type="text" name="answer" size="30" />
-                  <input type="submit" value="Submit" name="submit" />
-                  <input type="hidden" value="questionid" value="questionid" />
-                  <input type="hidden" value="submitted" value="1" />
-              </form>
+              <h2 class="siteTitle">Survey Name</h2>
+              <div class="entry">
+                <h3 class="questionTitle">Question One:</h3>
+                <form action="index.php" method="post">
+                    <input type="text" name="answer" size="85" />
+                    <br>
+                    <input type="submit" name="submit" value="Submit" class="button" />
+                    
+                    <input type="hidden" name="questionid" value="questionid" />
+                    <input type="hidden" name="submitted" value="1" />
+                </form>
+              </div><!--end entry -->
             </div><!--end content -->
         </div><!--end wrapContent -->
       <div class= 'footer'><p><a href=admin/index.php>Admin Panel</a></p></div><!--end footer -->

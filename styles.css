@@ -3,6 +3,7 @@
 /* global rules */
 body {
     margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 p {}
@@ -11,13 +12,26 @@ a:hover {}
 
 h1, h2, h3, h4, h5, h6 {}
 
+/*heading rules */
+
+h2.siteTitle{
+    margin: 0px;
+    padding: 15px 0px 0px 15px;    
+}
+
+h3.questionTitle{
+    margin: 0px;
+    padding: 0px;
+}
+
 /* wrapper rules */
 
 .wrapOverall{
     width: 900px;
     border-left: 1px solid #999999;
     border-right: 1px solid #999999;
-    margin: 0 0 0 30;
+    border-bottom: 1px solid #999999;
+    margin: 0px 0px 0px 30px;
 }
 
 .wrapContent{
@@ -30,32 +44,63 @@ h1, h2, h3, h4, h5, h6 {}
 .header{
     background-color: #dfdfdf;
     border-bottom: 1px solid #999999;
+    height: 60px;
 }
 
 .content{
-    width: 700px;
+    width: 660px;
     float: right;
     border-left: 1px dotted #999999;
+    min-height: 500px;
+    padding: 0px 20px;
 }
 
 .footer{
-    background-color:  #efefef;
+    background-color:  #d4d4d4;
+    border-top: 1px dotted #999999;
+    clear: both;
+    margin: 0px;
+    padding: 4px;
+}
+
+.footer p{
+    margin: 0px;
+    padding: 0px;
 }
 
 /* side naviigation rules */
 
 .sideNav{
-
+    width: 199px;
+    float: left;
 }
 .sideNav ul{
-    
+    margin: 0px;
+    padding: 0px;
 }
-.sideNav li{
-    
+.sideNav ul li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-bottom: 1px solid #999999 ;
 }
 .sideNav ul li a{
-    
+    margin: 0px;
+    padding: 2px 0px 2px 4px;
+    text-decoration: none;
 }
 .sideNav ul li a:hover{
-    
+    background-color: #efefef;
+}
+
+/* common element rules */
+
+.entry{
+    margin: 30px;
+}
+
+/* button rules */
+
+.button {
+    margin: 3px;
 }
