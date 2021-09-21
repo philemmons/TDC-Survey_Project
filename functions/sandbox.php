@@ -10,7 +10,8 @@ function getSurveyQuestions($dbConn){
     $statement -> execute();
     $results = $statement -> fetchAll(PDO::FETCH_ASSOC);
 
-    echo json_encode($results);
+    // this will display the entire map
+    // echo json_encode($results);
 
     if($results){
         foreach($results as $result){
