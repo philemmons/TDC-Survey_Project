@@ -15,17 +15,29 @@
   <body>
     <div class='wrapOverall'>
       <div class= 'header'>
-        <?php head(); ?>
+        <?php head(); // template: header function ?>
       </div><!--end header -->
       <div class='wrapContent'>
 
           <div class='sideNav'>
-            <?php sideNav($dbConn); ?>
+            <?php sideNav($dbConn); // template: side navigation function ?>
           </div>
 
           <div class= 'content'>
             <h2 class="siteTitle">Survey Name</h2>
-            <div class="entry">
+            <?php getSurveyQuestions($dbConn); // sandbox: pull list of questions?>
+          </div><!--end content -->
+      </div><!--end wrapContent -->
+      <div class= 'footer'>
+        <?php footer(); // template: footer function?>
+      </div><!--end footer -->
+    </div><!--end wrapOverall -->
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
+
+            <!--<div class="entry">
               <h3 class="questionTitle">Question One:</h3>
               <form action="index.php" method="post">
                   <input type="text" name="answer" size="85" />
@@ -35,14 +47,4 @@
                   <input type="hidden" name="questionid" value="questionid" />
                   <input type="hidden" name="submitted" value="1" />
               </form>
-            </div><!--end entry -->
-          </div><!--end content -->
-      </div><!--end wrapContent -->
-      <div class= 'footer'>
-        <?php footer(); ?>
-      </div><!--end footer -->
-    </div><!--end wrapOverall -->
-
-    <script src="js/scripts.js"></script>
-  </body>
-</html>
+            </div>end entry -->
