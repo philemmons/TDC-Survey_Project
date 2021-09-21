@@ -16,7 +16,7 @@ function getSurveyQuestions($dbConn){
         foreach($results as $result){
             echo'
             <div class="entry">
-              <h3 class="questionTitle">'.$result.':</h3>
+              <h3 class="questionTitle">'.$result['question_body'].':</h3>
               <form action="index.php" method="post">
                   <input type="text" name="answer" size="85" />
                   <br>
