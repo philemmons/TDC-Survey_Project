@@ -20,10 +20,7 @@
       <div class='wrapContent'>
 
           <div class='sideNav'>
-            <ul>
-              <li><a href="#">Survey 1</a></li>
-              <li><a href="#">Survey 2</a></li>
-            </ul>
+            <?php sideNav($dbConn); ?>
           </div>
 
           <div class= 'content'>
@@ -41,7 +38,9 @@
             </div><!--end entry -->
           </div><!--end content -->
       </div><!--end wrapContent -->
-      <div class= 'footer'><p><a href=admin/index.php>Admin Panel</a></p></div><!--end footer -->
+      <div class= 'footer'>
+        <?php footer(); ?>
+      </div><!--end footer -->
     </div><!--end wrapOverall -->
 
     <script src="js/scripts.js"></script>
