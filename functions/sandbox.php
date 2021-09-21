@@ -10,7 +10,7 @@ function getSurveyQuestions($dbConn){
     $statement -> execute();
     $results = $statement -> fetchAll(PDO::FETCH_ASSOC);
 
-    //echo json_encode($result);
+    echo json_encode($results);
 
     if($results){
         foreach($results as $result){
